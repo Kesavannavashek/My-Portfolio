@@ -133,8 +133,8 @@ const ContactMe = () => {
 
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             {/* Name + Email in one row */}
-            <div className="flex gap-4">
-              <div className="flex flex-col lg:w-52 w-24 md:w-64">
+            <div className="flex gap-4 lg:flex-row flex-col">
+              <div className="flex flex-col lg:w-52 w-full md:w-64">
                 <label htmlFor="name" className="text-lg cursor-none">
                   Name
                 </label>
