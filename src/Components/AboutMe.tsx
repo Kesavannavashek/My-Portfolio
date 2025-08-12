@@ -27,11 +27,11 @@ const AboutMe = () => {
               transition={{ duration: 0.5, ease: "easeInOut",delay:0.1 }}
               className=" text-justify lg:text-left border-2 rounded-3xl p-4 m-5 text-lg bg-black/20 backdrop-blur-xs"
             >
-              Hey there! I’m recently Graduated with a Bachelor's in Computer
+              {`Hey there! I’m recently Graduated with a Bachelor's in Computer
               Science, I’ve built a strong foundation in software development,
               problem-solving, and core computer science principles. My academic
               experience has shaped the way I approach technical challenges,
-              with a focus on clean code and efficient architecture.
+              with a focus on clean code and efficient architecture.`}
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -40,11 +40,11 @@ const AboutMe = () => {
               transition={{ duration: 0.5, ease: "easeInOut",delay:0.1 }}
               className="text-justify lg:text-left border-2 rounded-3xl p-4 m-5 text-lg bg-black/20 backdrop-blur-xs"
             >
-              As a Full Stack Developer, I specialize in both front-end and
+             {` As a Full Stack Developer, I specialize in both front-end and
               back-end technologies and have hands-on experience using Git for
               version control. I’m passionate about building high-performance,
               secure, and scalable web applications, and I’m always eager to
-              contribute my skills to innovative and collaborative teams.
+              contribute my skills to innovative and collaborative teams.`}
             </motion.p>
           </motion.div>
 
@@ -81,9 +81,9 @@ const AboutMe = () => {
                 Web Development
               </h2>
               <p className="font-inconsolata text-justify lg:mx-2">
-                Building scalable web apps using Next.js, React, Node.js, and
+               {`Building scalable web apps using Next.js, React, Node.js, and
                 Spring Boot, with a focus on performance, security, and clean
-                code.
+                code.`}
               </p>
             </motion.div>
             <motion.div
@@ -118,8 +118,8 @@ const AboutMe = () => {
                 Problem Solving
               </h2>
               <p className="font-inconsolata text-justify">
-                Solved challenges on LeetCode, HackerRank, and Geeks for Geeks
-                to sharpen my algorithmic thinking and coding efficiency.
+              {`Solved challenges on LeetCode, HackerRank, and Geeks for Geeks
+                to sharpen my algorithmic thinking and coding efficiency.`}
               </p>
             </motion.div>
           </div>
