@@ -131,7 +131,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0, delay: i * 0.1 }}
-                  className={`bg-gradient-to-br from-white to-${item.color} border cursor-none p-3 rounded-2xl hover:scale-105 transition duration-500 hover:shadow-[0_0px_35px_rgba(0,0,0,0.25)] shadow-${item.color}`}
+                  className={`bg-gradient-to-br from-white to-${item.color}  border cursor-none p-3 rounded-2xl hover:scale-105 transition duration-500 hover:shadow-[0_0px_35px_rgba(0,0,0,0.25)] shadow-${item.color}`}
                 >
                   <Link href={item.link} target="_blank">
                     <Image
