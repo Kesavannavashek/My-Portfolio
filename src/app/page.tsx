@@ -46,7 +46,10 @@ export default function Home() {
               }}
               className="text-white text-lg lg:text-4xl m-3 font-cherry"
             >
-              Hi There,<span className="inline-block animate-tilt origin-bottom">👋</span>
+              Hi There,
+              <span className="inline-block animate-tilt origin-bottom">
+                👋
+              </span>
             </motion.p>
 
             <motion.p
@@ -58,14 +61,19 @@ export default function Home() {
               }}
               className="bg-clip-text font-cherry inline-block text-4xl sm:text-5xl lg:text-6xl font-extrabold text-transparent bg-gradient-to-r from-[#ed24df] to-[#6f6cde] mb-5"
             >
-              I'm Kesavan
+              {`I'm Kesavan`}
               <span className="animate-ping text-3xl sm:text-4xl lg:text-5xl font-extralight bg-clip-text bg-[#6f6cde] text-transparent ml-2">
                 |
               </span>
             </motion.p>
 
             <TypeAnimation
-              sequence={["<Full Stack Developer/>", 1000, "<Programmer/>", 1000]}
+              sequence={[
+                "<Full Stack Developer/>",
+                1000,
+                "<Programmer/>",
+                1000,
+              ]}
               repeat={Infinity}
               speed={30}
               cursor
@@ -118,7 +126,6 @@ export default function Home() {
             <motion.div className="flex gap-8 items-center justify-center lg:justify-start cursor-none">
               {socials?.map((item, i) => (
                 <motion.div
-
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
