@@ -8,27 +8,33 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Home() {
-  console.log("motion", motion);
+  // console.log("motion", motion);
+  const gradientMap: Record<string, string> = {
+    "red": "to-red-700 shadow-red-700",
+    "blue": "to-blue-600 shadow-blue-600",
+    "green": "to-green-700 shadow-green-700",
+    "yellow": "to-yellow-700 shadow-yellow-700",
+  };
   const socials = [
     {
       icon: "/github.svg",
       link: "https://github.com/Kesavannavashek",
-      color: "red-700",
+      color: "red",
     },
     {
       icon: "/linkedin.svg",
       link: "https://www.linkedin.com/in/kesavan-m-1111191a3",
-      color: "blue-600",
+      color: "blue",
     },
     {
       icon: "/leetcode.svg",
       link: "https://leetcode.com/u/Kesavan_m_07/",
-      color: "yellow-700",
+      color: "yellow",
     },
     {
       icon: "/hackerrank.svg",
       link: "https://www.hackerrank.com/profile/kesavannavi77",
-      color: "green-700",
+      color: "green",
     },
   ];
   return (
@@ -131,7 +137,9 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0, delay: i * 0.1 }}
-                  className={`bg-gradient-to-br from-white to-${item.color} border cursor-none p-3 rounded-2xl hover:scale-105 transition duration-500 hover:shadow-[0_0px_35px_rgba(0,0,0,0.25)] shadow-${item.color}`}
+                  className={`bg-gradient-to-br from-white ${
+                    gradientMap[item.color]
+                  } border cursor-none p-3 rounded-2xl hover:scale-105 transition duration-500 hover:shadow-[0px_0px_40px]`}
                 >
                   <Link href={item.link} target="_blank">
                     <Image
@@ -175,7 +183,7 @@ export default function Home() {
               tiltMaxAngleY={15}
               perspective={800}
             >
-              <div className="w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 rounded-full bg-gradient-to-b from-[#6f6cde]/50 to-[#ed24df]/100 p-1.5 shadow-2xl">
+              <div className="w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 rounded-full bg-gradient-to-b from-[#6f6cde]/50 to-[#ed24df]/100 p-1.5 shadow-[0_0_35px] shadow-purple-500">
                 <div className="relative w-full h-full rounded-full bg-black ring-4 overflow-hidden">
                   <Image
                     src="/avatar.webp"

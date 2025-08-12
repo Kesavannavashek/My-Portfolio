@@ -41,16 +41,22 @@ const ContactMe = () => {
       });
   };
 
+  const gradientMap: Record<string, string> = {
+    red:"to-red-700 shadow-red-700",
+    blue: "to-blue-700 shadow-blue-700",
+    green: "to-green-700 shadow-green-700",
+    yellow: "to-yellow-700 shadow-yellow-700",
+  };
   const socials = [
     {
       icon: "/github.svg",
       link: "https://github.com/Kesavannavashek",
-      color: "red-700",
+      color: "green",
     },
     {
       icon: "/linkedin.svg",
       link: "https://www.linkedin.com/in/kesavan-m-1111191a3",
-      color: "blue-600",
+      color: "red",
     },
     // {
     //   icon: "/leetcode.svg",
@@ -97,7 +103,9 @@ const ContactMe = () => {
                   animate={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0, delay: i * 0.1 }}
-                  className={`bg-gradient-to-br from-white to-${item.color} border p-3 rounded-2xl hover:scale-110 transition duration-500 hover:shadow-[0_0px_35px_rgba(0,0,0,0.25)] shadow-${item.color}`}
+                  className={`bg-gradient-to-br from-white ${
+                    gradientMap[item.color]
+                  } border cursor-none p-3 rounded-2xl hover:scale-105 transition duration-500 hover:shadow-[0px_0px_40px]`}
                 >
                   <Link href={item.link} target="_blank">
                     <Image
@@ -126,7 +134,7 @@ const ContactMe = () => {
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             {/* Name + Email in one row */}
             <div className="flex gap-4">
-              <div className="flex flex-col w-80">
+              <div className="flex flex-col lg:w-52 w-24 md:w-64">
                 <label htmlFor="name" className="text-lg cursor-none">
                   Name
                 </label>
