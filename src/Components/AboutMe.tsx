@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "motion/react";
 
 const AboutMe = () => {
-    console.log("motion",motion);
+    // console.log("motion",motion);
   
-  let bulletinStyle =
+  const bulletinStyle =
     "before:content-['•'] font-inconsolata before:mr-2 before:text-transparent before:bg-clip-text before:bg-gradient-to-r before:from-[#6f6cde] before:to-[#ed24df]";
 
   return (

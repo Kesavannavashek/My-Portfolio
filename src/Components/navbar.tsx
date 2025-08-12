@@ -5,7 +5,7 @@ import Link from "next/link";
 import PopUpNav from "./PopUpNav";
 import { motion } from "framer-motion";
 const Navbar = () => {
-  let linkDecoration =
+  const linkDecoration =
     "py-1 px-2 rounded-lg border border-transparent cursor-none transition-all duration-150 hover:scale-105 hover:border-gray-500 hover:bg-gray-600/10 ";
   const [isNavToggeled, setIsNavToggeled] = useState<boolean>(false);
 
