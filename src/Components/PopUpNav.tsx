@@ -18,7 +18,7 @@ const PopUpNav: FC<PopUpNavProps> = ({ isOpen, onClose }) => {
     "bg-gradient-to-r from-[#6f6cde]/30 to-[#ed24df]/50 text-white border-2 border-white w-full";
 
   return (
-    <div className={`${isOpen ? 'backdrop-blur-lg' : ''} lg:hidden fixed inset-0 z-40 w-dvw  pointer-events-none`}>
+    <div className={`${isOpen ? 'backdrop-blur-lg' : ''} lg:hidden fixed inset-0 z-40 w-dvw pointer-events-none`}>
       <motion.div
         initial={{x:"150%"}}
         animate={{ x: isOpen ? 0 : "150%" }}
@@ -30,7 +30,7 @@ const PopUpNav: FC<PopUpNavProps> = ({ isOpen, onClose }) => {
         }}
         className={`absolute flex border-2 flex-col right-0 gap-6 p-5 h-dvh bg-black/90 w-2/3 rounded-3xl backdrop-blur-lg opacity-90 ${
           isOpen ? "pointer-events-auto" : "pointer-events-none"
-        }`}
+        } md:w-[45%]`}
       >
         <div className="flex justify-end">
           <svg

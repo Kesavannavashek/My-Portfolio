@@ -93,7 +93,7 @@ const Skills = () => {
         Skills to craft high-performance, efficient websites
       </motion.p>
 
-      <div className="flex flex-wrap justify-center gap-6 lg:gap-12 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10 2xl:gap-8 mt-10 place-items-center items-stretch lg:mx-0 md:mx-5">
         {skills.map((item, i) => (
           <motion.div
             key={i}
@@ -101,7 +101,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="flex w-full sm:w-130 md:w-100 lg:w-[calc(29.33%-1rem)] text-center flex-col gap-4 border rounded-2xl p-2 lg:p-5 bg-gradient-to-tr bg-white/10 backdrop-blur-lg"
+            className="flex w-full lg:w-[80%] 2xl:w-full text-center flex-col gap-4 border rounded-2xl p-2 lg:p-5 bg-gradient-to-tr bg-white/10 backdrop-blur-lg"
           >
             <h1 className="text-2xl font-cherry">{item.name}</h1>
             <p className="font-inconsolata text-lg">{item.desc}</p>

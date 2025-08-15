@@ -77,7 +77,7 @@ const projects = () => {
       >
         Here Is My Works
       </motion.p>
-      <div className="flex flex-wrap justify-center lg:justify-start gap-6 mt-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10 2xl:gap-8 mt-10 place-items-center items-stretch lg:mx-0 md:mx-5">
         {myprojects?.map((project, i) => (
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -86,7 +86,7 @@ const projects = () => {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             key={i}
             className="flex flex-col border rounded-2xl hover:-translate-y-2 transition duration-500 group 
-                 w-full sm:w-90 md:w-100 lg:w-[calc(33.333%-1rem)] backdrop-blur-xs"
+                w-full lg:w-[90%] 2xl:w-full backdrop-blur-xs"
           >
             <motion.div className="w-full h-56 relative">
               <Image

@@ -50,7 +50,7 @@ export default function Home() {
                 duration: 0.6,
                 ease: "easeOut",
               }}
-              className="text-white text-lg lg:text-3xl 2xl:text-4xl m-3 font-cherry"
+              className="text-white text-lg md:text-3xl lg:text-3xl 2xl:text-4xl m-3 font-cherry"
             >
               Hi There,
               <span className="inline-block animate-tilt origin-bottom">
@@ -65,10 +65,10 @@ export default function Home() {
                 duration: 0.6,
                 ease: "easeOut",
               }}
-              className="bg-clip-text font-cherry inline-block text-4xl sm:text-5xl lg:text-5xl 2xl:text-6xl font-extrabold text-transparent bg-gradient-to-r from-[#ed24df] to-[#6f6cde] mb-5 2xl:my-4"
+              className="bg-clip-text font-cherry inline-block text-4xl md:text-6xl lg:text-5xl 2xl:text-6xl font-extrabold text-transparent bg-gradient-to-r from-[#ed24df] to-[#6f6cde] mb-5 2xl:my-4"
             >
               {`I'm Kesavan`}
-              <span className="animate-ping text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-extralight bg-clip-text bg-[#6f6cde] text-transparent ml-2">
+              <span className="animate-ping text-3xl md:text-5xl lg:text-5xl 2xl:text-6xl font-extralight bg-clip-text bg-[#6f6cde] text-transparent ml-2">
                 |
               </span>
             </motion.p>
@@ -83,7 +83,7 @@ export default function Home() {
               repeat={Infinity}
               speed={30}
               cursor
-              className="bg-clip-text font-cherry text-2xl sm:text-lg lg:text-5xl 2xl:text-6xl block text-transparent bg-gradient-to-r from-[#6f6cde] to-[#ed24df] mb-10"
+              className="bg-clip-text font-cherry text-2xl md:text-5xl lg:text-5xl 2xl:text-6xl block text-transparent bg-gradient-to-r from-[#6f6cde] to-[#ed24df] mb-10"
             />
 
             <motion.div
@@ -143,7 +143,7 @@ export default function Home() {
                 >
                   <Link href={item.link} target="_blank">
                     <Image
-                      className="w-5 h-5 cursor-none"
+                      className="w-5 h-5 md:w-8 md:h-8 lg:w-5 lg:h-5 cursor-none"
                       src={item.icon}
                       alt="icons"
                       // fill
@@ -156,7 +156,7 @@ export default function Home() {
             </motion.div>
             <motion.div className="flex  items-center mt-15 lg:ml-15 justify-center lg:justify-start">
               <div className="w-3 h-3 bg-green-500 rounded-full shadow-[0px_0px_14px] animate-pulse shadow-green-500"></div>
-              <p className="ml-2 font-bold font-inconsolata ">
+              <p className="ml-2 font-bold font-inconsolata md:text-xl lg:text-lg">
                 Available To Work
               </p>
             </motion.div>

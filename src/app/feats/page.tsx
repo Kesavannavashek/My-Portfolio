@@ -38,6 +38,14 @@ const Feats = () => {
     //   duration: "4 Weeks",
     //   hashtags: ["Next.js", "SpringBoot", "MySQL"],
     // },
+    // {
+    //   image: "/brandwaves.jpeg",
+    //   name: "Full Stack Developer (Intern)",
+    //   organization: "BrandWaves",
+    //   location: "Chennai",
+    //   duration: "4 Weeks",
+    //   hashtags: ["Next.js", "SpringBoot", "MySQL"],
+    // },
   ];
 
   const profiles = [
@@ -86,7 +94,7 @@ const Feats = () => {
           >
             Coding Profiles
           </motion.h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-5">
+          <div className="2xl:mx-6 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10 my-5 place-items-center">
             {profiles?.map((profile, i) => (
               <motion.div
                 key={i}
@@ -94,7 +102,7 @@ const Feats = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: i * 0.15 }}
-                className=" border rounded-2xl hover:-translate-y-3 transition-all duration-800"
+                className=" border rounded-2xl hover:-translate-y-3 transition-all duration-800 w-full md:w-[90%] lg:w-[80%] 2xl:w-full"
               >
                 <div className="relative h-56 group">
                   <Image
@@ -122,7 +130,7 @@ const Feats = () => {
         >
           Experiences
         </motion.h1>
-        <div className="lg:mx-6 grid grid-cols-1 md:grid-cols-2 justify-center lg:grid-cols-3 gap-10 my-5">
+        <div className="2xl:mx-6 grid grid-cols-1 md:grid-cols-2 justify-center 2xl:grid-cols-3 gap-10 my-5 place-items-center">
           {experiences?.map((experience, i) => (
             <motion.div
               key={i}
@@ -130,7 +138,7 @@ const Feats = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.15 }}
-              className=" border rounded-2xl hover:-translate-y-3 transition-all duration-800"
+              className=" border rounded-2xl hover:-translate-y-3 transition-all duration-800 w-full md:w-[90%] lg:w-[80%] 2xl:w-full"
             >
               <div className="relative h-56 group">
                 <Image

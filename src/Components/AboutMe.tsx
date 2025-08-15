@@ -8,7 +8,7 @@ const AboutMe = () => {
     "before:content-['•'] font-inconsolata before:mr-2 before:text-transparent before:bg-clip-text before:bg-gradient-to-r before:from-[#6f6cde] before:to-[#ed24df]";
 
   return (
-    <div className="lg:mx-18 flex flex-col items-center">
+    <div className="2xl:mx-18 md:mx-14 lg:mx-3 flex flex-col items-center">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         viewport={{ once: true, amount: 0.3 }}
