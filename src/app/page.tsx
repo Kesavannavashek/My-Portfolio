@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
       <div className="h-dvh flex flex-col justify-around">
-        <div className="bg-transparent flex flex-col-reverse gap-15 lg:flex-row items-center lg:items-start lg:pt-20 lg:px-8 lg:mt-20 lg:mr-30">
+        <div className="bg-transparent flex flex-col-reverse gap-15 lg:flex-row  lg:w-dvw items-center lg:items-start lg:pt-20 lg:px-8 lg:mt-20 lg:justify-around">
           {/* Left Side */}
           <div className="w-full lg:w-4/5 lg:ml-10 px-4 text-center lg:text-left">
             <motion.p
@@ -50,7 +50,7 @@ export default function Home() {
                 duration: 0.6,
                 ease: "easeOut",
               }}
-              className="text-white text-lg lg:text-4xl m-3 font-cherry"
+              className="text-white text-lg lg:text-3xl 2xl:text-4xl m-3 font-cherry"
             >
               Hi There,
               <span className="inline-block animate-tilt origin-bottom">
@@ -65,10 +65,10 @@ export default function Home() {
                 duration: 0.6,
                 ease: "easeOut",
               }}
-              className="bg-clip-text font-cherry inline-block text-4xl sm:text-5xl lg:text-6xl font-extrabold text-transparent bg-gradient-to-r from-[#ed24df] to-[#6f6cde] mb-5"
+              className="bg-clip-text font-cherry inline-block text-4xl sm:text-5xl lg:text-5xl 2xl:text-6xl font-extrabold text-transparent bg-gradient-to-r from-[#ed24df] to-[#6f6cde] mb-5 2xl:my-4"
             >
               {`I'm Kesavan`}
-              <span className="animate-ping text-3xl sm:text-4xl lg:text-5xl font-extralight bg-clip-text bg-[#6f6cde] text-transparent ml-2">
+              <span className="animate-ping text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-extralight bg-clip-text bg-[#6f6cde] text-transparent ml-2">
                 |
               </span>
             </motion.p>
@@ -83,7 +83,7 @@ export default function Home() {
               repeat={Infinity}
               speed={30}
               cursor
-              className="bg-clip-text font-cherry text-2xl sm:text-lg lg:text-6xl block text-transparent bg-gradient-to-r from-[#6f6cde] to-[#ed24df] mb-10"
+              className="bg-clip-text font-cherry text-2xl sm:text-lg lg:text-5xl 2xl:text-6xl block text-transparent bg-gradient-to-r from-[#6f6cde] to-[#ed24df] mb-10"
             />
 
             <motion.div
@@ -170,7 +170,7 @@ export default function Home() {
               duration: 0.6,
               ease: "easeOut",
             }}
-            className="flex items-center justify-center mt-10 lg:mt-0 lg:mr-10"
+            className="flex items-center justify-center mt-10 lg:mt-0 lg:mr-10 lg:w-2/5"
           >
             <Tilt
               scale={1.05}
