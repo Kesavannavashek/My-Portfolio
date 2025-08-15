@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
       <div className="h-dvh flex flex-col justify-around">
-        <div className="bg-transparent flex flex-col-reverse gap-15 lg:flex-row  lg:w-dvw items-center lg:items-start lg:pt-20 lg:px-8 lg:mt-20 lg:justify-around">
+        <div className="bg-transparent flex flex-col-reverse gap-15 lg:flex-row  lg:w-dvw items-center lg:items-center lg:pt-20 lg:px-8 lg:justify-around">
           {/* Left Side */}
           <div className="w-full lg:w-4/5 lg:ml-10 px-4 text-center lg:text-left">
             <motion.p
@@ -50,11 +50,11 @@ export default function Home() {
                 duration: 0.6,
                 ease: "easeOut",
               }}
-              className="text-white text-lg md:text-3xl lg:text-3xl 2xl:text-4xl m-3 font-cherry"
+              className="text-white text-lg md:text-3xl lg:text-3xl 2xl:text-4xl m-2 md:m-3 font-cherry"
             >
               Hi There,
               <span className="inline-block animate-tilt origin-bottom">
-                👋
+                {`👋`}
               </span>
             </motion.p>
 
@@ -65,10 +65,10 @@ export default function Home() {
                 duration: 0.6,
                 ease: "easeOut",
               }}
-              className="bg-clip-text font-cherry inline-block text-4xl md:text-6xl lg:text-5xl 2xl:text-6xl font-extrabold text-transparent bg-gradient-to-r from-[#ed24df] to-[#6f6cde] mb-5 2xl:my-4"
+              className="bg-clip-text font-cherry inline-block text-4xl md:text-6xl lg:text-5xl 2xl:text-6xl font-extrabold text-transparent bg-gradient-to-r from-[#ed24df] to-[#6f6cde] mb-3 md:mb-5 2xl:my-4"
             >
               {`I'm Kesavan`}
-              <span className="animate-ping text-3xl md:text-5xl lg:text-5xl 2xl:text-6xl font-extralight bg-clip-text bg-[#6f6cde] text-transparent ml-2">
+              <span className="animate-ping text-2xl md:text-5xl lg:text-5xl 2xl:text-6xl font-extralight bg-clip-text bg-[#6f6cde] text-transparent ml-2">
                 |
               </span>
             </motion.p>
@@ -83,7 +83,7 @@ export default function Home() {
               repeat={Infinity}
               speed={30}
               cursor
-              className="bg-clip-text font-cherry text-2xl md:text-5xl lg:text-5xl 2xl:text-6xl block text-transparent bg-gradient-to-r from-[#6f6cde] to-[#ed24df] mb-10"
+              className="bg-clip-text font-cherry text-2xl md:text-5xl lg:text-5xl 2xl:text-6xl block text-transparent bg-gradient-to-r from-[#6f6cde] to-[#ed24df] mb-8"
             />
 
             <motion.div
@@ -120,16 +120,8 @@ export default function Home() {
               </a>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: -30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.6,
-                ease: "easeOut",
-              }}
-              className="mt-10 flex items-center justify-center lg:justify-start"
-            ></motion.div>
-            <motion.div className="flex gap-8 items-center justify-center lg:justify-start cursor-none">
+          
+            <motion.div className="flex gap-8 items-center justify-center lg:justify-start cursor-none my-8">
               {socials?.map((item, i) => (
                 <motion.div
                   key={i}
@@ -154,7 +146,7 @@ export default function Home() {
                 </motion.div>
               ))}
             </motion.div>
-            <motion.div className="flex  items-center mt-15 lg:ml-15 justify-center lg:justify-start">
+            <motion.div className="flex  items-center mt-3 lg:ml-15 justify-center lg:justify-start">
               <div className="w-3 h-3 bg-green-500 rounded-full shadow-[0px_0px_14px] animate-pulse shadow-green-500"></div>
               <p className="ml-2 font-bold font-inconsolata md:text-xl lg:text-lg">
                 Available To Work
@@ -170,7 +162,7 @@ export default function Home() {
               duration: 0.6,
               ease: "easeOut",
             }}
-            className="flex items-center justify-center mt-10 lg:mt-0 lg:mr-10 lg:w-2/5"
+            className="flex items-start justify-start lg:mr-10 lg:w-2/5"
           >
             <Tilt
               scale={1.05}
@@ -183,8 +175,8 @@ export default function Home() {
               tiltMaxAngleY={15}
               perspective={800}
             >
-              <div className="w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 rounded-full bg-gradient-to-b from-[#6f6cde]/50 to-[#ed24df]/100 p-1.5 shadow-[0_0_35px] shadow-purple-500">
-                <div className="relative w-full h-full rounded-full bg-black ring-4 overflow-hidden">
+              <div className="w-48 sm:w-64 lg:w-80 2xl:w-96 2xl:h-96 h-48 sm:h-64 lg:h-80 mt-10 lg:m-0 rounded-full bg-gradient-to-b from-[#6f6cde]/50 to-[#ed24df]/100 p-1.5 shadow-[0_0_60px] shadow-purple-500">
+                <div className="relative w-full h-full rounded-[100px] bg-black ring-4 overflow-hidden">
                   <Image
                     src="/avatar.webp"
                     alt="Profile picture"
