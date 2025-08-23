@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en" className={`${cherrycreamsoda.variable} ${inconsolata.variable}`}>
 
       <body className='px-3 '>
-        {/* <ParticlesBackground/> */}
+        <ParticlesBackground/>
         <RoundCursor/>
         <header className='sticky top-0 lg:border-2  rounded-2xl lg:my-2 lg:backdrop-blur-sm z-50'>
             <Navbar/>
