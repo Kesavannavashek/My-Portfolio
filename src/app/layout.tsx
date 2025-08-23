@@ -6,6 +6,7 @@ import { ParticlesBackground } from '@/Components/ParticlesBackground'
 import { Cherry_Cream_Soda } from 'next/font/google'
 import { Inconsolata } from 'next/font/google'
 import RoundCursor from '@/Components/Roundcursor'
+
 const cherrycreamsoda = Cherry_Cream_Soda({
   weight : ['400'],
   subsets: ['latin'],
@@ -34,7 +35,7 @@ export default function RootLayout({
     <html lang="en" className={`${cherrycreamsoda.variable} ${inconsolata.variable}`}>
 
       <body className='px-3 '>
-        <ParticlesBackground/>
+        {/* <ParticlesBackground/> */}
         <RoundCursor/>
         <header className='sticky top-0 lg:border-2  rounded-2xl lg:my-2 lg:backdrop-blur-sm z-50'>
             <Navbar/>

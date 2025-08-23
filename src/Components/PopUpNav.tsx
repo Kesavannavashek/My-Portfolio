@@ -56,19 +56,20 @@ const PopUpNav: FC<PopUpNavProps> = ({ isOpen, onClose }) => {
             />
           </svg>
         </div>
-        <div className="flex flex-col gap-6 w-full">
+        <div className="flex flex-col gap-6 w-full overflow-scroll">
           {[
             { href: "/", label: "Home" },
             { href: "/projects", label: "Projects" },
             { href: "/skills", label: "Skills" },
             { href: "/feats", label: "Feats" },
             { href: "/contact_me", label: "Contact Me" },
-          ].map((link) => (
+          ].map((link,i) => (
             <motion.div 
               key={link.href}
-            // initial={{opacity:0,x:50}}
-            // whileInView={{opacity:1,x:0}}
-            transition={{duration:0.5,ease:"linear"}}
+            initial={{opacity:0,x:50}}
+            whileInView={{opacity:1,x:0}}
+            viewport={{once:true}}
+            transition={{duration:0.4,delay:0.1 * i,ease:'easeInOut'}}
             className="max-w-full"
             ><Link prefetch
               onClick={onClose}

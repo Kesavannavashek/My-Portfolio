@@ -39,7 +39,7 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="h-dvh flex flex-col justify-around">
+      <div className="min-h-dvh flex flex-col justify-around">
         <div className="bg-transparent flex flex-col-reverse gap-15 lg:flex-row  lg:w-dvw items-center lg:items-center lg:pt-20 lg:px-8 lg:justify-around">
           {/* Left Side */}
           <div className="w-full lg:w-4/5 lg:ml-10 px-4 text-center lg:text-left">
@@ -213,7 +213,6 @@ export default function Home() {
           </svg>
         </motion.div>
       </div>
-
       <AboutMe />
     </>
   );
